@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sustainable Cleaning Products Choice Set</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Sustainable Cleaning Products Choice Set</h1>
+            <input type="text" id="username" placeholder="Enter your name">
+            <button onclick="login()">Enter</button>
+        </div>
+        <div class="clearfix">
+            <div class="column">
+                <div class="product" id="productA">
+                    <h3>Product A</h3>
+                    <div class="attributes"></div>
+                    <button onclick="addToCart('A')">Add to Cart</button>
+                </div>
+            </div>
+            <div class="column">
+                <div class="product" id="productB">
+                    <h3>Product B</h3>
+                    <div class="attributes"></div>
+                    <button onclick="addToCart('B')">Add to Cart</button>
+                </div>
+            </div>
+            <div class="column">
+                <div class="product" id="productC">
+                    <h3>Product C</h3>
+                    <div class="attributes"></div>
+                    <button onclick="addToCart('C')">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <button id="exploreButton" onclick="exploreProducts()">Explore the Products</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
