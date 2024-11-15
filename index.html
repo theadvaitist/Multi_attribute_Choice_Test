@@ -1,43 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sustainable Cleaning Products Choice Set</title>
-    <link rel="stylesheet" href="styles.css">
+  <title>Product Exploration</title>
+  <link rel="stylesheet" href="updated.css">
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>Sustainable Cleaning Products Choice Set</h1>
-            <input type="text" id="username" placeholder="Enter your name">
-            <button onclick="login()">Enter</button>
-        </div>
-        <div class="clearfix">
-            <div class="column">
-                <div class="product" id="productA">
-                    <h3>Product A</h3>
-                    <div class="attributes"></div>
-                    <button onclick="addToCart('A')">Add to Cart</button>
-                </div>
-            </div>
-            <div class="column">
-                <div class="product" id="productB">
-                    <h3>Product B</h3>
-                    <div class="attributes"></div>
-                    <button onclick="addToCart('B')">Add to Cart</button>
-                </div>
-            </div>
-            <div class="column">
-                <div class="product" id="productC">
-                    <h3>Product C</h3>
-                    <div class="attributes"></div>
-                    <button onclick="addToCart('C')">Add to Cart</button>
-                </div>
-            </div>
-        </div>
-        <button id="exploreButton" onclick="exploreProducts()">Explore the Products</button>
+  <h1>Product Exploration</h1>
+  <label for="username">Enter your name:</label>
+  <input type="text" id="username" />
+  <button onclick="login()">Enter</button>
+
+  <div id="products">
+    <div id="productA" class="product">
+      <h2>Product A</h2>
+      <div class="attributes"></div>
     </div>
-    <script src="script.js"></script>
+    <div id="productB" class="product">
+      <h2>Product B</h2>
+      <div class="attributes"></div>
+    </div>
+    <div id="productC" class="product">
+      <h2>Product C</h2>
+      <div class="attributes"></div>
+    </div>
+  </div>
+
+  <button id="exploreButton" onclick="exploreProducts()">Explore Products</button>
+  <button id="addToCartButton" disabled onclick="addToCart('A')">Add Product A to Cart</button>
+  <button id="addToCartButton" disabled onclick="addToCart('B')">Add Product B to Cart</button>
+  <button id="addToCartButton" disabled onclick="addToCart('C')">Add Product C to Cart</button>
+
+  <script src="updated.js"></script>
 </body>
 </html>
