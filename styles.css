@@ -1,26 +1,13 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
 }
 
-input[type="text"] {
+.product {
+    border: 1px solid #ccc;
     padding: 10px;
-    margin: 10px 0;
-    width: 200px;
+    margin: 10px;
 }
 
-button {
-    padding: 10px 20px;
-    margin: 10px 5px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-button:disabled {
-    background-color: #cccccc;
-    cursor: not-allowed;
+.attributes {
+    margin-top: 10px;
 }
