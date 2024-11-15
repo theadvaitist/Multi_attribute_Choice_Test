@@ -9,6 +9,7 @@ let user = '';
 let exploreCount = 0;
 let attributesOrder = [];
 let attributesOrderType = null;
+let currentAttributeIndex = 0;
 let startTime;
 
 const products = {
@@ -72,13 +73,12 @@ function exploreProducts() {
   // Update the attributesOrder array based on the current order type
   attributesOrder = attributesOrderType.split(', ');
 
+  // Display the current attribute
   for (let product in products) {
-    let attributeHtml = '';
-    for (let i = 0; i < attributes.length; i++) {
-      attributeHtml += `<p>${products[product][attributes[i]]}</p>`;
-    }
-    document.querySelector(`#product${product} .attributes`).innerHTML = attributeHtml;
+    document.querySelector(`#product${product} .attributes`).innerHTML = `<p>${products[product][attributesOrder[currentAttributeIndex]]}</p>`;
   }
+
+  currentAttributeIndex++;
 
   if (exploreCount >= 5) {
     document.getElementById('exploreButton').disabled = true;
