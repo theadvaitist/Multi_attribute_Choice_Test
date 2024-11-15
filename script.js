@@ -41,9 +41,11 @@ const attributes = ['quantity', 'action', 'time', 'state', 'price'];
 function login() {
   const usernameInput = document.getElementById('username');
   user = usernameInput.value.trim();
+  console.log('User:', user);
   if (user) {
     alert(`Welcome, ${user}!`);
     startTime = new Date();
+    console.log('Start Time:', startTime);
     usernameInput.disabled = true;
     document.getElementById('loginButton').disabled = true;
     document.getElementById('exploreButton').disabled = false;
@@ -53,13 +55,16 @@ function login() {
 }
 
 function exploreProducts() {
-  // Rest of the exploreProducts() function remains the same
+  console.log('Exploring products...');
+  // Implement the exploreProducts logic here
 }
 
 function addToCart(product) {
-  // Rest of the addToCart() function remains the same
+  console.log('Adding to cart:', product);
+  // Implement the addToCart logic here
 }
 
 function downloadData(data) {
-  // Rest of the downloadData() function remains the same
+  console.log('Downloading data:', data);
+  // Implement the downloadData logic here
 }
